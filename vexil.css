@@ -1,0 +1,252 @@
+
+/**
+* Naam:					Vexil (Vexillum)
+* Description:	Vexil is part of the Exora grid system and is used to reset and normalize all default browser styling 
+*
+* Author: 			Jeroen Pielage - Exora
+* Author-url:		http://www.jeroenpielage.nl
+* Exora-url:		https://www.exora-grid.com
+*
+* Version: 			0.1.0
+**/
+
+/********** general **********/
+
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, code em, img,
+small, strike, strong,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside, 
+footer, header, 
+menu, nav, 
+section, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	box-sizing: border-box;
+	cursor: default;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figure,
+main {
+	display: block;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+audio,
+video {
+	display: inline-block;
+}
+canvas {
+  display: inline-block;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+nav ol,
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/********** text **********/
+small {
+  font-size: .8em;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+b,
+strong {
+	font-weight: bold;
+}
+
+
+/********** selection **********/
+::-moz-selection {
+	background-color: #b3d4fc;
+	color: #000000;
+	text-shadow: none;
+}
+
+::selection {
+	background-color: #b3d4fc;
+	color: #000000;
+	text-shadow: none;
+}
+
+
+/********** user interaction ***********/
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+[hidden] {
+	display: none;
+}
+[aria-busy="true"] {
+	cursor: progress;
+}
+[aria-controls] {
+	cursor: pointer;
+}
+[aria-hidden="false"][hidden]:not(:focus) {
+	clip: rect(0, 0, 0, 0);
+	display: inherit;
+	position: absolute;
+}
+[aria-disabled] {
+	cursor: default;
+}
+
+/********** images **********/
+img {
+	border-style: none;
+}
+svg {
+	fill: currentColor;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/********** tables **********/
+table {
+	border-collapse: collapse;
+}
+
+
+/********** buttons **********/
+button,
+input,
+select,
+textarea {
+	margin: 0;
+	background-color: transparent;
+	color: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+button,
+input { 
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+html [type="button"], 
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button; 
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/********** input **********/
+textarea {
+	overflow: auto; 
+	resize: vertical; 
+}
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; 
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+/********** forms **********/
+legend {
+	display: table;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+legend 	+ * {
+	clear: both;
+}
+
+fieldset {
+	border: 0;
+	padding: 0 0 0 0;
+	margin: 0 0 15px 0;
+	min-width: 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+	display: table-cell;
+}
